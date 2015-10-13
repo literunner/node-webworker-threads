@@ -9,8 +9,8 @@ node_js:
  - "0.10"
  - "iojs"
 
-before_install:
-- if [ "$CXX" = "g++" ]; then export CXX="g++-4.8" CC="gcc-4.8"; fi
+install:
+- CXX="g++-4.8" CC="gcc-4.8" npm install
 
 addons:
   apt:
